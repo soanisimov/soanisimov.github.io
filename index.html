@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфоліо</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.css">
+</head>
+<body>
+<div class="container">
+  <section class="about">
+    <div class="text">
+      <h1>Привіт! Я <span class="highlight">Сергій Анісімов</span> 👋</h1>
+      <p>Це мій сайт-портфоліо як Front-end розробника</p>
+    </div>
+    <div class="image">
+     <img src="pfp.png" class="img-responsive" width="227" height="227">
+    </div>
+  </section>
+
+  <section class="about_me wow fadeInUp">
+    <h1>Про мене</h1>
+    <p>Я студент третього курсу, навчаюсь на спеціальності комп'ютерна інженерія. Маю практичний досвід у розробці сайтів, веб-додатків, ботів. Прагну саморозвитку, тому створюю власні <span class="highlight"> <a href="#projects">pet projects </a></span>, намагаюся вивчати та практикувати щось нове та корисне. Готовий розвиватися і працювати над собою, хочу бути невідʼємною частиною крутої команди :)</p>
+  </section>
+
+  <section class="skills wow slideInUp">
+    <h2>Мої навички</h2>
+    <div class="skill">
+      <label for="html-skill">HTML</label>
+      <input type="range" min="0" max="100" value="100" disabled class="slider wow fadeInUp">
+    </div>
+    <div class="skill">
+        <label for="css-skill">CSS</label>
+        <input type="range" min="0" max="100" value="100" disabled class="slider">
+      </div>
+      <div class="skill">
+        <label for="JS-skill">JavaScript</label>
+        <input type="range" min="0" max="100" value="90" disabled class="slider">
+      </div>
+      <div class="skill">
+        <label for="React">React</label>
+        <input type="range" min="0" max="100" value="50" disabled class="slider">
+      </div>
+      <div class="skill">
+        <label for="Node-skill">Node.js</label>
+        <input type="range" min="0" max="100" value="70" disabled class="slider">
+      </div>
+  </section>
+
+  <section class="others_skills wow fadeInUp">
+    <h2>Інші навички</h2>
+    <div class="skill">
+        <label for="html-skill">Java</label>
+        <input type="range" min="0" max="100" value="100" disabled class="slider" id="slider_2">
+      </div>
+      <div class="skill">
+        <label for="html-skill">Python</label>
+        <input type="range" min="0" max="100" value="70" disabled class="slider" id="slider_2">
+      </div>
+      <div class="skill">
+        <label for="html-skill">C#</label>
+        <input type="range" min="0" max="100" value="40" disabled class="slider" id="slider_2">
+      </div>
+  </section>
+
+  <section class="graf_skills wow fadeInUp">
+    <h2>Графічний дизайн</h2>
+    <div class="skill">
+        <label for="html-skill">Photoshop</label>
+        <input type="range" min="0" max="100" value="100" disabled class="slider" id="slider_3">
+      </div>
+      <div class="skill">
+        <label for="html-skill">Figma</label>
+        <input type="range" min="0" max="100" value="70" disabled class="slider" id="slider_3">
+      </div>
+      <div class="skill">
+        <label for="html-skill">Illustrator</label>
+        <input type="range" min="0" max="100" value="85" disabled class="slider" id="slider_3">
+      </div>
+  </section>
+  
+
+  <section class="projects wow fadeInUp" id="projects">
+    <div class="project-card">
+        <div class="project-content">
+            <h2><a href="https://gafigaf.github.io/newdiskr.html" target="_blank">Дискримінант</a></h2>
+            <div class="tags">
+                <span class="tag blue">HTML</span>
+                <span class="tag blue">CSS</span>
+                <span class="tag blue">JS</span>
+            </div>
+            <p>Призначений для обчислення дискримінанта за формулою: D=b²-4*a*c</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-content">
+            <h2><a href="https://gafigaf.github.io/kvadrat.html" target="_blank">Квадрат суми</a></h2>
+            <div class="tags">
+              <span class="tag blue">HTML</span>
+              <span class="tag blue">CSS</span>
+              <span class="tag blue">JS</span>
+            </div>
+            <p>Призначений для обчислення квадрата суми за формулою: (a±b)²</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-content">
+            <h2><a href="https://gafigaf.github.io/r_k.html" target="_blank">Різниця квадратів</a></h2>
+            <div class="tags">
+              <span class="tag blue">HTML</span>
+              <span class="tag blue">CSS</span>
+              <span class="tag blue">JS</span>
+            </div>
+            <p>Призначений для обчислення різниці квадратів за формулою: (a-b)(a+b) = a²+b²</p>
+        </div>
+    </div>
+    <div class="project-card">
+      <div class="project-content">
+          <h2><a href="https://github.com/soanisimov/React-tic-tac-toe" target="_blank">React tic-tac-toe</a></h2>
+          <div class="tags">
+              <span class="tag blue">React</span>
+          </div>
+          <p>Оновлена версія хрестики-нулики з офіційного туторіалу ReactJS</p>
+      </div>
+  </div>
+    <div class="project-card">
+        <div class="project-content">
+            <h2><a href="https://github.com/soanisimov/JavaFX-Maths" target="_blank">JavaFX Maths</a></h2>
+            <div class="tags">
+                <span class="tag lilac">Java</span>
+            </div>
+            <p>JavaFX програма для квадратного рівняння та теореми Вієта</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-content">
+            <h2><a href="https://github.com/soanisimov/Schedule-bot" target="_blank">Schedule bot</a></h2>
+            <div class="tags">
+              <span class="tag lilac">Python</span>
+            </div>
+            <p>Бот створений для відображення поточного розкладу Київського столичного університету ім. Бориса Грінченка</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="contacts wow fadeInUp">
+    <h2>Контакти</h2>
+    <div class="social-icons">
+      <a href="https://github.com/soanisimov" target="_blank"><img src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png" alt="github" width="90" height="90"></a>
+      <a href="https://t.me/xlebokot1"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/telegram-white-icon.png" alt="github" width="90" height="90"></a>
+      <a href="mailto: anisimovsergii@gmail.com"><img src="https://raw.githubusercontent.com/Gafigaf/gafigaf.github.io/master/utilities/email_t.png" alt="github" width="90" height="90"></a>
+    </div>
+  </section>
+</div>
+<script src="script.js"></script>
+<script src="wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+</body>
+</html>

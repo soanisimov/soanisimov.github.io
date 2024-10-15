@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Unbounded", sans-serif;
+    background: radial-gradient(circle, rgb(24, 32, 58) 0%, rgba(23,24,28,1) 100%);
+    color: #fafafa;
+    padding: 20px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .img-responsive{
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    filter: drop-shadow(0px 17px 40px #252f55);
+  }
+
+  .highlight{
+    color: #1C8CD4;
+  }
+
+  .highlight a{
+    text-decoration: none;
+    color: #1C8CD4
+  }
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .about_me{
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  
+  .about .text {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  
+  .about .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .skills {
+    margin-bottom: 50px;
+  }
+
+  .others_skills{
+    margin-bottom: 50px;
+  }
+
+  .graf_skills{
+    margin-bottom: 80px;
+  }
+  
+  .skill {
+    margin-bottom: 15px;
+  }
+
+  input[type="range"] {
+    outline: none;
+    width: 100%;
+    margin-top: 5px;
+    background: #252f55;
+    border-radius: 100px;
+    height: 8px;
+    --value: 100%;
+  }
+
+  input[type="range"]::-webkit-slider-thumb{
+    visibility: hidden;
+    border-radius: 100px;
+  }
+
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, rgb(27, 86, 181) 1%, rgba(27, 189, 239, 1) var(--value), #252f55 var(--value), #252f55 100%);
+    border-radius: 999px;
+  }
+
+  #slider_2::-webkit-slider-runnable-track{
+    background: linear-gradient(to right, rgb(89, 97, 168) 1%, rgb(129, 140, 248) var(--value), #252f55 var(--value), #252f55 100%);
+  }
+
+  #slider_3::-webkit-slider-runnable-track{
+    background: linear-gradient(to right, rgb(108, 26, 175) 1%, rgb(142, 118, 212) var(--value), #252f55 var(--value), #252f55 100%);
+  }
+
+  .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .project-card {
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: #1f2937;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-image 0.3ms ease-in-out; 
+}
+
+.project-card:hover{
+  background-image:radial-gradient(circle, rgba(13,49,73,0.7287289915966386) 0%, rgba(31,41,55,1) 100%);
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project-content a {
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+  color: #fafafa;
+}
+
+.project-content a:hover{
+  text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+.project-content h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+.tag {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    display: inline-block;
+}
+.tag a{
+  text-decoration: none;
+}
+
+.blue {background-color: #1B85CF;}
+.lilac {background-color: #6973C9;}
+
+.project-content p {
+    margin: 0;
+    color: #9ca3af;
+}
+  
+  .contacts {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .contacts img{
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      margin-right: auto;
+      filter: drop-shadow(0px 17px 40px #252f55);
+      padding: 5px;
+      transition: all 0.3s ease-out;
+  }
+  .contacts img:hover{
+    transform: translateY(-10px);
+    filter: drop-shadow(0px 17px 40px #37467f);
+    
+  }
+  
+  
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+  
+    .about .image {
+      margin-top: 20px;
+    }
+
+    .project-image {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .tags {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        margin-bottom: 5px;
+    }
+
+    
+  
+  }
+  
