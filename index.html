@@ -6,26 +6,50 @@
   <title>Портфоліо</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="animate.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
+  <script defer src="./app.js"></script>
 </head>
 <body>
 <div class="container">
   <section class="about">
     <div class="text">
       <h1>Привіт! Я <span class="highlight">Сергій Анісімов</span> 👋</h1>
-      <p>Це мій сайт-портфоліо як Front-end розробника</p>
+      <p>Це мій сайт-портфоліо як Front<span class="highlight"> <img src="star.svg"> </span>End розробника</p>
     </div>
+    
     <div class="image">
      <img src="pfp.png" class="img-responsive" width="227" height="227">
     </div>
   </section>
 
+  <div class="splide">
+    <div class="splide__track splide__track-3 ">
+      <ul class="splide__list">
+        <li class="splide__slide"><a href="#projects">HTML</a></li>
+        <li class="splide__slide"><img src="star2.svg"></li>
+        <li class="splide__slide"><a href="#projects">CSS</a></li>
+        <li class="splide__slide"><img src="star2.svg"></li>
+        <li class="splide__slide"><a href="#projects">JS</a></li>
+        <li class="splide__slide"><img src="star2.svg"></li>
+        <li class="splide__slide"><a href="#projects">React</a></li>
+        <li class="splide__slide"><img src="star2.svg"></li>
+        <li class="splide__slide"><a href="#projects">Design</a></li>
+        <li class="splide__slide"><img src="star2.svg"></li>
+        <li class="splide__slide"><a href="#projects">CODE</a></li>
+        <li class="splide__slide"><img src="star2.svg"></li>
+      </ul>
+    </div>
+  </div>
+
   <section class="about_me wow fadeInUp">
-    <h1>Про мене</h1>
+    <h1><img src="star.svg"> Про мене</h1>
     <p>Я студент третього курсу, навчаюсь на спеціальності комп'ютерна інженерія. Маю практичний досвід у розробці сайтів, веб-додатків, ботів. Прагну саморозвитку, тому створюю власні <span class="highlight"> <a href="#projects">pet projects </a></span>, намагаюся вивчати та практикувати щось нове та корисне. Готовий розвиватися і працювати над собою, хочу бути невідʼємною частиною крутої команди :)</p>
   </section>
 
   <section class="skills wow slideInUp">
-    <h2>Мої навички</h2>
+    <h2><img src="star.svg"> Мої навички</h2>
     <div class="skill">
       <label for="html-skill">HTML</label>
       <input type="range" min="0" max="100" value="100" disabled class="slider wow fadeInUp">
@@ -50,6 +74,8 @@
 
   <section class="others_skills wow fadeInUp">
     <h2>Інші навички</h2>
+
+ 
     <div class="skill">
         <label for="html-skill">Java</label>
         <input type="range" min="0" max="100" value="100" disabled class="slider" id="slider_2">
@@ -144,7 +170,7 @@
     </div>
   </section>
 
-  <section class="contacts wow fadeInUp">
+  <section class="contacts">
     <h2>Контакти</h2>
     <div class="social-icons">
       <a href="https://github.com/soanisimov" target="_blank"><img src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png" alt="github" width="90" height="90"></a>
