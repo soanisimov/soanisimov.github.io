@@ -29,7 +29,7 @@
 
   body {
     font-family: "Unbounded", sans-serif;
-    background: radial-gradient(circle, rgb(14, 12, 29) 0%, rgb(24, 29, 51) 100%);
+    background-color: #16192e;
     color: #fafafa;
     padding: 20px;
     cursor: url('arrowhead.png'), auto;
@@ -161,7 +161,7 @@
 
   input[type="range"]::-webkit-slider-runnable-track {
     background: linear-gradient(to right, rgb(27, 86, 181) 1%, rgba(27, 189, 239, 1) var(--value), #252f55 var(--value), #252f55 100%);
-    border-radius: 999px;
+    border-radius: 100px;
   }
 
   #slider_2::-webkit-slider-runnable-track{

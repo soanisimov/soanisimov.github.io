@@ -5,6 +5,7 @@ const carouselElements = document.querySelectorAll(".splide");
       type: "loop",
       drag: true,
       autoWidth: true,
+      centeredSlides: true,
       gap: 30,
       pagination: false,
       arrows: false,
